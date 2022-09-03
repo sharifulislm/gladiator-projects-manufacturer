@@ -3,14 +3,18 @@ import { FaTwitter } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
 import { BsWhatsapp } from "react-icons/bs";
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../../firebase.init';
 
 
 const Footer = () => {
+  const[user]=useAuthState(auth);
     return (
         <footer className=" mt-5 bg-black text-white">
 <div className='footer p-10 justify-around'>
       <div>
-    <span className="footer-title">Services</span> 
+    <span className="footer-title">Currently your Login with this </span> 
+    <p>email = {user?.email}</p>
     <a className="link link-hover">Branding</a>
     <a className="link link-hover">Design</a>
     <a className="link link-hover">Marketing</a>
@@ -41,7 +45,7 @@ const Footer = () => {
 
   </div>
 </div>
-  <footer className="footer footer-center p-4 text-white bg-teal-500  ">
+  <footer className="footer footer-center p-4 text-white bg-black border-t ">
   <div>
     <p>Copyright © 2022 - All right reserved </p>
   </div>

@@ -21,7 +21,7 @@ const Contact = () => {
     
 
     return (
-        <div  className="hero min-h-screen text-black">
+        <div  className="hero min-h-screen container mx-auto text-black">
  
   <div className="hero-content text-center  text-neutral-content">
 

@@ -20,7 +20,7 @@ const Reveiws = () => {
 
     return (
         <div>
-                <div><h1 className='text-5xl  m-auto text-center'>Reveiw</h1>
+                <div><h1 className='text-5xl  m-auto lg:ml-10 lg:mt-5 text-center'>Reveiw</h1>
             <div className='m-auto w-64 mt-3 mb-2 h-1 bg-primary'></div>
             </div>
             <div className='grid grid-cols-1 lg:grid-cols-3 gap-3 '>

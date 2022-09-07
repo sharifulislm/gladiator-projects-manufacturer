@@ -4,7 +4,7 @@ import './Banner.css';
 const Banner = () => {
     return (
         <>
-        <div class="hero min-h-screen banner-box">
+        <div class="hero min-h-screen banner-box ">
         <div class="hero-overlay "></div>
         <div class="hero-content text-center text-white">
           <div class="max-w-md">

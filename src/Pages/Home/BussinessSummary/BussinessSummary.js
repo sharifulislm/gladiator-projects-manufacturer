@@ -8,7 +8,7 @@ const BussinessSummary = () => {
     return (
 
 
-    <div className='mb-20'>
+    <div className='mb-20 lg:mb-20'>
       <div className='text-center text-6xl text-black mb-20 '>
       <p className='text-5xl mb-3 font-bold'>Worldwide Trust Our Company </p>
         <h1 className='text-xl font-bold'>Our Business Area, Projects And Clients</h1>

@@ -34,6 +34,7 @@ import NotFound from './Pages/NotFound';
 import ShowAllreveiw from './Pages/Home/Reveiws/AllReveiw/ShowAllreveiw';
 import AllReveiw from './Pages/Home/Reveiws/AllReveiw/AllReveiw';
 import Navbars from './Pages/Share/Navbar/Navbars';
+import Search from './Pages/Share/Navbar/Search/Search';
 // import StarRating from './Dashboard/StarRating';
 // import MakeAdmin from './Dashboard/MakeAdmin/MakeAdmin';
 
@@ -43,8 +44,8 @@ import Navbars from './Pages/Share/Navbar/Navbars';
 function App() {
   return (
     <div className="">
-      <Navbars></Navbars>
- <Navbar></Navbar>
+      {/* <Navbars></Navbars>
+ <Navbar></Navbar> */}
 
 
  <div className=''>
@@ -77,6 +78,7 @@ function App() {
 <Route path='ShowReveiw' element={<ShowAllreveiw></ShowAllreveiw>}></Route>
 <Route path='AllReveiw' element={<AllReveiw></AllReveiw>}></Route>
 <Route path='signUp' element={<SignUp></SignUp>}></Route>
+<Route path='Search' element={<Search></Search>}></Route>
 <Route path='Login' element={<Login></Login>}></Route>
 <Route path="*" element={<NotFound></NotFound>}></Route>
 

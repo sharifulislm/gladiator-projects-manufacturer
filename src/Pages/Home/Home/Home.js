@@ -13,8 +13,8 @@ import Service from '../Service/Service';
 const Home = () => {
     return (
         <div className=''>
-            <Banner></Banner>
-            <div className='max-w-7xl mx-auto px-12  '>
+            {/* <Banner></Banner> */}
+            <div className=' m-auto lg:ml-6 '>
 
           
             <Service></Service>

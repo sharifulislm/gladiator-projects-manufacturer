@@ -20,15 +20,11 @@ const Navbars = () => {
     return (
         <div class="navbar bg-primary text-primary-content  mx-auto px-12 ">
         <div class="flex-1">
-          <Link to="/">
           <a class="btn btn-ghost normal-case text-xl text-blod text-white">parts manufacturer</a>
-          </Link>
         </div>
         <div class="flex-none gap-2 ">
         <div class="form-control text-center mx-0 sm:visible invisible">
-        <Link className='text-bold text-xl ' to="/Search">
             <input type="text" placeholder="Search anything" class="input pr-20 input-bordered" />
-            </Link>
           </div>
       <div className='sm:visible invisible'>
       {user ?   

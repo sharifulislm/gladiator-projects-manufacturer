@@ -44,8 +44,8 @@ import Search from './Pages/Share/Navbar/Search/Search';
 function App() {
   return (
     <div className="">
-      {/* <Navbars></Navbars>
- <Navbar></Navbar> */}
+      <Navbars></Navbars>
+ {/* <Navbar></Navbar> */}
 
 
  <div className=''>

@@ -12,7 +12,6 @@ const Navbars = () => {
   const [order] =useMyorder([])
     const [user] = useAuthState(auth);
     const [admin] = useAdmin(user)
- 
 
     const Logout = () => {
         signOut(auth);
@@ -37,7 +36,7 @@ const Navbars = () => {
             <label tabindex="0" class="btn  btn-ghost btn-circle avatar">
        
        <div class="w-10  rounded-full sm:visible invisible">
-         <img className='w-full' src={user.photoURL || img} />
+         <img className='w-full' src={user?.photoURL || img} />
        </div>
      </label>
          </>

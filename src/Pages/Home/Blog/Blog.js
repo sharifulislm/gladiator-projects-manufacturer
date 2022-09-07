@@ -3,8 +3,9 @@ import React from 'react';
 const Blog = () => {
     return (
         <div className='p-12 m-12'>
+            <h1> comeing soon </h1>
 
-            <div className='text-center p-10 '>
+            {/* <div className='text-center p-10 '>
                 <h1 className='text-xl text-blue-600'>How will you improve the performance of a React Application?</h1>
 <p>
 Internally, React uses several clever techniques to minimize the number of costly DOM operations required to update the UI. While this will lead to a faster user interface without specifically optimizing for performance for many cases, there are ways where you can still speed up your React application. This post will go over some useful techniques you can use to improve your React code.</p>
@@ -29,7 +30,7 @@ URL state)</p>
             <div  className='text-center p-10'>
                 <h1  className='text-xl text-blue-600'>What is a unit test? Why should write unit tests?</h1>
                 <p>coming soon </p>
-            </div>
+            </div> */}
             
         </div>
     );

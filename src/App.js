@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
 import Home from './Pages/Home/Home/Home';
-// import Footer from './Pages/Share/Footer/Footer';
+import Footer from './Pages/Share/Footer/Footer';
 import Login from './Pages/Share/Login/Login';
 import SignUp from './Pages/Share/Login/SignUp';
 import Purchase from './Pages/Home/Service/Purchase';
@@ -34,7 +34,6 @@ import NotFound from './Pages/NotFound';
 import ShowAllreveiw from './Pages/Home/Reveiws/AllReveiw/ShowAllreveiw';
 import AllReveiw from './Pages/Home/Reveiws/AllReveiw/AllReveiw';
 import Navbars from './Pages/Share/Navbar/Navbars';
-import FooterPgae from './Pages/Share/Footer/FooterPgae';
 // import StarRating from './Dashboard/StarRating';
 // import MakeAdmin from './Dashboard/MakeAdmin/MakeAdmin';
 
@@ -87,8 +86,7 @@ function App() {
 <ToastContainer />
 
 </div>
-{/* <Footer></Footer> */}
-<FooterPgae></FooterPgae>
+<Footer></Footer>
 
     </div>
   );

@@ -2,26 +2,29 @@ import React from 'react';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+
 const Allusers = ({user,refetch}) => {
     const {email ,role} = user;
     const makeadmin = ()=> {
-      fetch(`https://rocky-thicket-49136.herokuapp.com/user/admin/${email}`, {
+      fetch(`http://localhost:5000/user/admin/${email}`, {
         method: 'PUT', 
         headers:{
           authorization: `bearer ${localStorage.getItem('accessToken')}`
         }
       })
       .then (res => {
+        
         if(res.status === 403){
           toast.error('Failed to make an addmin ');
         }
         return res.json()
+        
       })
       .then (data => {
         if(data){
-          
+          toast.success('Successfully made an admin');
            refetch();
-            toast.success('Successfully made an admin');
+         
         }
       
       }

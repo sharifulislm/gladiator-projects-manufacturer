@@ -28,7 +28,7 @@ const AddReview = () => {
           
             
         }
-        fetch('https://rocky-thicket-49136.herokuapp.com/review', {
+        fetch('http://localhost:5000/review', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
@@ -41,7 +41,7 @@ const AddReview = () => {
         .then(data =>{
             console.log(data);
             if(data){
-                toast.success('Doctor added successfully');
+                toast.success('Thaink you for your nice Review');
                 event.target.reset();
             }
           

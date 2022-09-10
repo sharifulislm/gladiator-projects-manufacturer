@@ -16,7 +16,7 @@ const CheckoutForm = ({order}) => {
     console.log(price);
 
     useEffect(() => {
-        fetch('http://localhost:5000/create-order-payment', {
+        fetch('https://manufacturer-wevpage.herokuapp.com/create-order-payment', {
             method: 'POST',
             headers:{
                 'content-type': 'application/json',
@@ -86,7 +86,7 @@ const CheckoutForm = ({order}) => {
                 Order: _id,
                 transactionId: paymentIntent.id
             }
-            fetch(`http://localhost:5000/payment/${_id}`, {
+            fetch(`https://manufacturer-wevpage.herokuapp.com/payment/${_id}`, {
                 method: 'PATCH',
                 headers: {
                     'content-type': 'application/json',

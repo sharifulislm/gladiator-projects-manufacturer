@@ -45,7 +45,7 @@ function App() {
   return (
     <div className="">
       <Navbars></Navbars>
- {/* <Navbar></Navbar> */}
+ <Navbar></Navbar>
 
 
  <div className=''>

@@ -9,7 +9,7 @@ const useUsers = () => {
   
   useEffect(() => {
   if(user){
-   fetch(`http://localhost:5000/users?email=${user.email}`)
+   fetch(`https://manufacturer-wevpage.herokuapp.com/users?email=${user.email}`)
    .then(res => res.json())
    .then(data => setUsers(data));
   }

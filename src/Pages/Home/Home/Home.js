@@ -13,7 +13,7 @@ import Service from '../Service/Service';
 const Home = () => {
     return (
         <div className=''>
-            {/* <Banner></Banner> */}
+            <Banner></Banner>
             <div className=' m-auto lg:ml-6 '>
 
           

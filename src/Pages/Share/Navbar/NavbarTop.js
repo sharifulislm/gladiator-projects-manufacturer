@@ -4,12 +4,11 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import useAdmin from '../../../Hooks/useAdmin';
-import useMyorder from '../../../Hooks/useMyorder';
 import img from '../../../Imge/download (3).jfif';
-import './navbar.css';
+import useMyorder from '../../../Hooks/useMyorder';
 
-const Navbars = () => {
-  const [order] =useMyorder([])
+const NavbarTop = () => {
+    const [order] =useMyorder([])
     const [user] = useAuthState(auth);
     const [admin] = useAdmin(user)
 
@@ -18,15 +17,20 @@ const Navbars = () => {
         localStorage.removeItem('accessToken');
       };
     return (
-        <div class="navbar bg-primary text-primary-content sm:visible invisible  mx-auto px-12 ">
-        <div class="flex-1">
-          <a class="btn btn-ghost normal-case text-xl text-blod text-white">parts manufacturer</a>
+        <div class="navbar bg-primary text-primary-content">
+        <div class="navbar-start pl-3">
+       
+          <a class="btn btn-ghost normal-case text-blod text-white text-xl">parts manufacturer</a>
         </div>
-        <div class="flex-none gap-2 ">
-        <div class="form-control text-center mx-0 sm:visible invisible">
-            <input type="text" placeholder="Search anything" class="input pr-20 input-bordered" />
+        <div class="navbar-end hidden lg:flex">
+
+        </div>
+        <div className='navbar-end pr-7 sm:visible invisible'>
+
+        <div class="form-control text-lift pl-7 pr-5 mx-0 sm:visible invisible">
+            <input type="text" placeholder="Search anything" class="input pr-40 input-bordered" />
           </div>
-      <div className='sm:visible invisible'>
+
       {user ?   
       // start condition profile and signOut and signin 
       <div class="dropdown dropdown-end">
@@ -75,12 +79,8 @@ const Navbars = () => {
 
                   :<Link className='text-bold text-xl ' to="/Login">Login</Link> }
       </div>
-
-        
-    
-        </div>
       </div>
     );
 };
 
-export default Navbars;
+export default NavbarTop;

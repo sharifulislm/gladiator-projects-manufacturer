@@ -35,6 +35,7 @@ import ShowAllreveiw from './Pages/Home/Reveiws/AllReveiw/ShowAllreveiw';
 import AllReveiw from './Pages/Home/Reveiws/AllReveiw/AllReveiw';
 import Navbars from './Pages/Share/Navbar/Navbars';
 import Search from './Pages/Share/Navbar/Search/Search';
+import NavbarTop from './Pages/Share/Navbar/NavbarTop';
 // import StarRating from './Dashboard/StarRating';
 // import MakeAdmin from './Dashboard/MakeAdmin/MakeAdmin';
 
@@ -44,7 +45,8 @@ import Search from './Pages/Share/Navbar/Search/Search';
 function App() {
   return (
     <div className="">
-      <Navbars></Navbars>
+      {/* <Navbars></Navbars> */}
+      <NavbarTop></NavbarTop>
  <Navbar></Navbar>
 
 

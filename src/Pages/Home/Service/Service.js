@@ -1,19 +1,35 @@
 import React, { useEffect, useState } from 'react';
+import Loading from '../../Share/Loading/Loading';
 import ShowServices from './ShowServices';
 
 
 const Service = () => {
-const [ service , setService] = useState([]);
-// console.log(service);
-
-useEffect(() => {
- fetch('https://manufacturer-wevpage.herokuapp.com/service')
- .then(res=> res.json())
- .then(data => setService(data))
-
-
-
-} ,[])
+    const [ service , setService] = useState([]);
+    const [isLoading,setLoading] = useState(true)
+    
+    
+    
+    const fethItems = () => {
+        fetch("https://rocky-thicket-49136.herokuapp.com/service")
+    
+        .then((res) => res.json())
+        .then((data) => {
+            setLoading(false);
+         setService(data)
+        
+        })
+    }
+    
+    useEffect(() => {
+        fethItems()
+    
+    } ,[])
+    
+    if(isLoading){
+        return  <Loading></Loading>
+    }
+    
+    
 
 
     return (

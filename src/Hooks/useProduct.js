@@ -1,17 +1,27 @@
-import  { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const useProduct = serviceId => {
     const[service,setService] =useState({})
-    console.log(serviceId);
-    useEffect(() => {
-        const url = `https://manufacturer-wevpage.herokuapp.com/purchase/${serviceId}`;
-        console.log(url);
+    const [isLoading,setLoading] = useState(true)
+    // console.log(service);
+    
+    
+    const fethItems = () => {
+        const url = `https://rocky-thicket-49136.herokuapp.com/purchase/${serviceId}`;
         fetch(url)
-        .then(res=> res.json())
- 
-        .then(data => setService(data));
-    },[serviceId])
-    return [service];
+    
+        .then((res) => res.json())
+        .then((data) => {
+            setLoading(false);
+         setService(data)
+        
+        })
+    }    
+    useEffect(() => {
+        fethItems()
+    
+    } ,[serviceId])
+    return [service,isLoading];
 };
 
 export default useProduct;

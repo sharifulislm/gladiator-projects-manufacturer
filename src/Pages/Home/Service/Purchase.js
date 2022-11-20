@@ -7,13 +7,14 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import auth from '../../../firebase.init';
 import useProduct from '../../../Hooks/useProduct';
+import Loading from '../../Share/Loading/Loading';
 
 
 
 
 const Purchase = () => {
 const {serviceId}=useParams();
-const [service]=useProduct(serviceId)
+const [service,isLoading]=useProduct(serviceId)
 const [user] = useAuthState(auth);
 const [quantityErorr, setQuantityErorr] = useState('');
 const [quantityvalue,setQuantityvalue ] = useState('');
@@ -34,6 +35,10 @@ useEffect(()=> {
   }
 
 },[quantitys])
+if(isLoading){
+  return <Loading></Loading>
+}
+
 
 
 
@@ -52,7 +57,7 @@ const handlePlaceOrder = event => {
         
     }
     console.log(order);
-    axios.post('https://manufacturer-wevpage.herokuapp.com/order',order)
+    axios.post('https://rocky-thicket-49136.herokuapp.com/order',order)
     .then(response => {
         const {data} = response;
         if(data.insertedId){

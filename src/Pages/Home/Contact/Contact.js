@@ -1,5 +1,5 @@
-import React from 'react';
 import emailjs from '@emailjs/browser';
+import React from 'react';
 import { toast } from 'react-toastify';
 import './Contact.css';
 
@@ -30,9 +30,9 @@ const Contact = () => {
       <h3 className='text-xl font-bold uppercase text-black' >Contact us  </h3>
             {/* <h2 className='text-4xl text-black'> Services We Provide</h2> */}
       </div>
-   <input className="border-2 text-black'" type="text" placeholder="name" name='name' className="input w-full max-w-xs w-full max-w-xs  mb-5" />
-   <input type="email" placeholder="email" name='email' className="input w-full max-w-xs w-full max-w-xs mb-5" />
-   <textarea type="text" placeholder="message" name='message' className="input w-full max-w-xs w-full max-w-xs h-32 mb-5  " />
+   <input className="border-2 text-black'" type="text" placeholder="name" name='name' required className="input w-full max-w-xs w-full max-w-xs  mb-5" />
+   <input type="email" placeholder="email" name='email' required className="input w-full max-w-xs w-full max-w-xs mb-5" />
+   <textarea type="text" placeholder="message" name='message' required className="input w-full max-w-xs w-full max-w-xs h-32 mb-5  " />
 
 <br></br>
 <input className='btn mb-6 w-full max-w-xs' type="submit" value='Send'/>

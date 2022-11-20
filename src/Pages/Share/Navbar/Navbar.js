@@ -33,7 +33,13 @@ const Navbar = () => {
               <li className='mr-5 text-blod btn btn-ghost visible sm:invisible'> {user ?<button className="" onClick={Logout} className="btn btn-ghost">Sign Out</button>
                   
 
-              :<Link className='text-bold ' to="/Login">Login</Link> }</li>
+              :
+              // <Link className='text-bold ' to="/Login">Login</Link>
+              <div class="navbar-end">
+              <a class="btn">Get started</a>
+            </div>
+              
+              }</li>
   </>
 
 

@@ -1,20 +1,35 @@
 import React, { useEffect, useState } from 'react';
-import ShowAllreveiw from './ShowAllreveiw';
+import Loading from '../../../Share/Loading/Loading';
+import ShowReveiw from '../ShowReveiw';
 
 
 const AllReveiw = () => {
     const [ reveiw , setReveiw] = useState([]);
-    // console.log(service);
+const [isLoading,setLoading] = useState(true)
+// console.log(service);
+
+
+const fethItems = () => {
+    fetch("https://rocky-thicket-49136.herokuapp.com/reviews")
+
+    .then((res) => res.json())
+    .then((data) => {
+        setLoading(false);
+     setReveiw(data)
     
-    useEffect(() => {
-     fetch('https://manufacturer-wevpage.herokuapp.com/reviews')
-     .then(res=> res.json())
-     .then(data => setReveiw(data))
-    
-    
-    
-    } ,[])
-    
+    })
+}
+
+useEffect(() => {
+    fethItems()
+
+} ,[])
+
+if(isLoading){
+    return <Loading></Loading>
+}
+
+
 
     return (
         <div>
@@ -23,7 +38,7 @@ const AllReveiw = () => {
             </div>
             <div className='grid grid-cols-1 lg:grid-cols-3 gap-3 '>
             {
-                reveiw.map(reveiws=><ShowAllreveiw key={reveiws._id} reveiws={reveiws}></ShowAllreveiw>)
+                reveiw.slice(0, 3).map(reveiws=><ShowReveiw key={reveiws._id} reveiws={reveiws}></ShowReveiw>)
             }
             </div>
         </div>

@@ -77,7 +77,10 @@ const NavbarTop = () => {
           </div>
                   
 
-                  :<Link className='text-bold text-xl ' to="/Login">Login</Link> }
+                  :
+                  <Link className=' text-blod text-white text-xl btn' to="/Login">Login</Link> 
+                
+                  }
       </div>
       </div>
     );

@@ -6,7 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 const Allusers = ({user,refetch}) => {
     const {email ,role} = user;
     const makeadmin = ()=> {
-      fetch(`https://manufacturer-wevpage.herokuapp.com/user/admin/${email}`, {
+      fetch(`https://rocky-thicket-49136.herokuapp.com/user/admin/${email}`, {
         method: 'PUT', 
         headers:{
           authorization: `bearer ${localStorage.getItem('accessToken')}`

@@ -8,7 +8,7 @@ const Modal = ({service,setService,}) => {
         const proceed = window.confirm('Are you sure you want to delete?');
         if(proceed){
             console.log('deleting user with id, ', id);
-            const url = `https://manufacturer-wevpage.herokuapp.com/service/${id}`;
+            const url = `https://rocky-thicket-49136.herokuapp.com/service/${id}`;
             fetch(url, {
                 method: 'DELETE',
                 headers: {
@@ -30,7 +30,7 @@ const Modal = ({service,setService,}) => {
     }
 
     // const hendleDelete = (_id) => {
-    //     fetch(`https://manufacturer-wevpage.herokuapp.com/service/${_id}`, {
+    //     fetch(`https://rocky-thicket-49136.herokuapp.com/service/${_id}`, {
     //         method: 'DELETE',
     //         headers: {
     //             authorization: `Bearer ${localStorage.getItem('accessToken')}`

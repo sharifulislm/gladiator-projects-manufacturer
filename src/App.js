@@ -1,46 +1,46 @@
 
 import { Route, Routes } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
+import Dashboard from './Dashboard/Dashboard';
+import Makeadmin from './Dashboard/Makeadmin';
+import Myorders from './Dashboard/Myorders/Myorders';
 import Home from './Pages/Home/Home/Home';
+import Purchase from './Pages/Home/Service/Purchase';
+import RequireAdmin from './Pages/RequireAdmin/RequireAdmin';
+import RequireAuth from './Pages/RequireAuth/RequireAuth';
 import Footer from './Pages/Share/Footer/Footer';
 import Login from './Pages/Share/Login/Login';
 import SignUp from './Pages/Share/Login/SignUp';
-import Purchase from './Pages/Home/Service/Purchase';
 import Navbar from './Pages/Share/Navbar/Navbar';
-import { ToastContainer} from 'react-toastify';
-import RequireAuth from './Pages/RequireAuth/RequireAuth';
-import RequireAdmin from './Pages/RequireAdmin/RequireAdmin';
-import Dashboard from './Dashboard/Dashboard';
-import Myorders from './Dashboard/Myorders/Myorders';
-import Makeadmin from './Dashboard/Makeadmin';
 // import MyProfile from './Dashboard/MyProfile';
-import Allusers from './Dashboard/Allusers';
 import AddProduct from './Dashboard/AddProduct';
-import ManageProducts from './Dashboard/ManageProducts';
-import ManageOrdders from './Dashboard/ManageOrdders';
 import AddReview from './Dashboard/AddReview';
+import Allusers from './Dashboard/Allusers';
+import ManageOrdders from './Dashboard/ManageOrdders';
+import ManageProducts from './Dashboard/ManageProducts';
 import Reveiws from './Pages/Home/Reveiws/Reveiws';
 
 
+import Payment from './Dashboard/Payment/Payment';
+import Profile from './Dashboard/Profile';
+import Blog from './Pages/Home/Blog/Blog';
 import BussinessSummary from './Pages/Home/BussinessSummary/BussinessSummary';
 import Contact from './Pages/Home/Contact/Contact';
-import Profile from './Dashboard/Profile';
-import Payment from './Dashboard/Payment/Payment';
-import Blog from './Pages/Home/Blog/Blog';
 // import RequireNurmaluser from './Pages/RequireAuth/RequireNurmaluser';
 import NotFound from './Pages/NotFound';
 // import Banner from './Pages/Home/Benner/Banner';
-import ShowAllreveiw from './Pages/Home/Reveiws/AllReveiw/ShowAllreveiw';
 import AllReveiw from './Pages/Home/Reveiws/AllReveiw/AllReveiw';
-import Navbars from './Pages/Share/Navbar/Navbars';
-import Search from './Pages/Share/Navbar/Search/Search';
+import ShowAllreveiw from './Pages/Home/Reveiws/AllReveiw/ShowAllreveiw';
 import NavbarTop from './Pages/Share/Navbar/NavbarTop';
+import Search from './Pages/Share/Navbar/Search/Search';
 // import StarRating from './Dashboard/StarRating';
 // import MakeAdmin from './Dashboard/MakeAdmin/MakeAdmin';
 
 
 // firebase deploy
+// https://rocky-thicket-49136.herokuapp.com/
 
 function App() {
   return (

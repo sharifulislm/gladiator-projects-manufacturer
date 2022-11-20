@@ -7,14 +7,9 @@ const Reveiws = () => {
     // console.log(service);
     
     useEffect(() => {
-     fetch('https://manufacturer-wevpage.herokuapp.com/reviews')
+     fetch('https://rocky-thicket-49136.herokuapp.com/reviews')
      .then(res=> res.json())
-     .then(data =>  setReveiw(data))
-    
-       
-  
-    
-    
+     .then(data =>  setReveiw(data)) 
     } ,[])
 
 

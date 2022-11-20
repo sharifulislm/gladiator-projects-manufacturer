@@ -23,7 +23,7 @@
           
             
 //         }
-//         fetch(`https://manufacturer-wevpage.herokuapp.com/user/${email}`, {
+//         fetch(`https://rocky-thicket-49136.herokuapp.com/user/${email}`, {
 //             method: 'PUT',
 //             headers: {
 //                 'content-type': 'application/json',

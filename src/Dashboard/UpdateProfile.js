@@ -24,7 +24,7 @@ const UpdateProfile = () => {
           
             
         }
-        fetch(`https://rocky-thicket-49136.herokuapp.com/user/${email}`, {
+        fetch(` https://gladiator-servser.onrender.com/user/${email}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json',

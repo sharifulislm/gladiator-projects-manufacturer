@@ -4,8 +4,8 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import useAdmin from '../../../Hooks/useAdmin';
-import img from '../../../Imge/download (3).jfif';
 import useMyorder from '../../../Hooks/useMyorder';
+import img from '../../../Imge/download (3).jfif';
 
 const NavbarTop = () => {
     const [order] =useMyorder([])
@@ -28,7 +28,7 @@ const NavbarTop = () => {
         <div className='navbar-end pr-7 sm:visible invisible'>
 
         <div class="form-control text-lift pl-7 pr-5 mx-0 sm:visible invisible">
-            <input type="text" placeholder="Search anything" class="input pr-40 input-bordered" />
+        <Link to="/Search"> <input type="text" placeholder="Search anything" class="input pr-40 input-bordered" /> </Link>
           </div>
 
       {user ?   

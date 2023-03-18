@@ -8,7 +8,7 @@ const ManageOrdders = () => {
     console.log(service);
     
     useEffect(() => {
-     fetch('https://rocky-thicket-49136.herokuapp.com/allorder')
+     fetch(' https://gladiator-servser.onrender.com/allorder')
      .then(res=> res.json())
      .then(data => setService(data))
     
@@ -21,7 +21,7 @@ const ManageOrdders = () => {
       const proceed = window.confirm('Are you sure you want to delete?');
       if(proceed){
           console.log('deleting user with id, ', id);
-          const url = `https://rocky-thicket-49136.herokuapp.com/orders/${id}`;
+          const url = ` https://gladiator-servser.onrender.com/orders/${id}`;
           fetch(url, {
               method: 'DELETE',
               headers: {

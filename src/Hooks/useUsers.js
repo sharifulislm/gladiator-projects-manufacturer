@@ -9,7 +9,7 @@ const useUsers = () => {
   
   useEffect(() => {
   if(user){
-   fetch(`https://rocky-thicket-49136.herokuapp.com/users?email=${user.email}`)
+   fetch(` https://gladiator-servser.onrender.com/users?email=${user.email}`)
    .then(res => res.json())
    .then(data => setUsers(data));
   }

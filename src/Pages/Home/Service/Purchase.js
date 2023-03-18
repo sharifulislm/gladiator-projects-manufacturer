@@ -57,7 +57,7 @@ const handlePlaceOrder = event => {
         
     }
     console.log(order);
-    axios.post('https://rocky-thicket-49136.herokuapp.com/order',order)
+    axios.post(' https://gladiator-servser.onrender.com/order',order)
     .then(response => {
         const {data} = response;
         if(data.insertedId){

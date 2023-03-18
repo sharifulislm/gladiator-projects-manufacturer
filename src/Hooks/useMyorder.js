@@ -8,7 +8,7 @@ const useMyorder =()=>{
   
   useEffect(() => {
   if(user){
-   fetch(`https://rocky-thicket-49136.herokuapp.com/orders?email=${user.email}`)
+   fetch(` https://gladiator-servser.onrender.com/orders?email=${user.email}`)
    .then(res => res.json())
    .then(data => setOrder(data));
   }

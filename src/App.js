@@ -33,6 +33,7 @@ import NotFound from './Pages/NotFound';
 // import Banner from './Pages/Home/Benner/Banner';
 import AllReveiw from './Pages/Home/Reveiws/AllReveiw/AllReveiw';
 import ShowAllreveiw from './Pages/Home/Reveiws/AllReveiw/ShowAllreveiw';
+import Service from './Pages/Home/Service/Service';
 import NavbarTop from './Pages/Share/Navbar/NavbarTop';
 import Search from './Pages/Share/Navbar/Search/Search';
 // import StarRating from './Dashboard/StarRating';
@@ -40,7 +41,7 @@ import Search from './Pages/Share/Navbar/Search/Search';
 
 
 // firebase deploy
-// https://rocky-thicket-49136.herokuapp.com/
+//  https://gladiator-servser.onrender.com/
 
 function App() {
   return (
@@ -74,6 +75,7 @@ function App() {
 <Route path='Profiles' element={<Profile></Profile>}></Route>
 <Route path='Payment/:id' element={<Payment></Payment>}></Route>
 
+
 </Route>
 <Route path="Purchase/:serviceId" element={<RequireAuth><Purchase></Purchase></RequireAuth>}></Route>
 {/* <Route path="Payment/:id" element={<Payment></Payment>}></Route> */}
@@ -81,6 +83,7 @@ function App() {
 <Route path='AllReveiw' element={<AllReveiw></AllReveiw>}></Route>
 <Route path='signUp' element={<SignUp></SignUp>}></Route>
 <Route path='Search' element={<Search></Search>}></Route>
+<Route path='service' element={<Service></Service>}></Route>
 <Route path='Login' element={<Login></Login>}></Route>
 <Route path="*" element={<NotFound></NotFound>}></Route>
 

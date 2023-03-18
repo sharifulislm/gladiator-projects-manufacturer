@@ -14,7 +14,7 @@ const AddProduct = () => {
           
             
         }
-        fetch('https://rocky-thicket-49136.herokuapp.com/addproduct', {
+        fetch(' https://gladiator-servser.onrender.com/addproduct', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',

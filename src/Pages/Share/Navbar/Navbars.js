@@ -23,9 +23,11 @@ const Navbars = () => {
           <a class="btn btn-ghost normal-case text-xl text-blod text-white">parts manufacturer</a>
         </div>
         <div class="flex-none gap-2 ">
+
         <div class="form-control text-center mx-0 sm:visible invisible">
-            <input type="text" placeholder="Search anything" class="input pr-20 input-bordered" />
+        <Link to="/Login">   <input type="text" placeholder="Search anything" class="input pr-20 input-bordered" />     </Link>
           </div>
+      
       <div className='sm:visible invisible'>
       {user ?   
       // start condition profile and signOut and signin 

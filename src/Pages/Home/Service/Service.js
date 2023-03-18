@@ -10,7 +10,8 @@ const Service = () => {
     
     
     const fethItems = () => {
-        fetch("https://rocky-thicket-49136.herokuapp.com/service")
+        fetch(" https://gladiator-servser.onrender.com/service")
+        // https://gladiator-servser.onrender.com/
     
         .then((res) => res.json())
         .then((data) => {

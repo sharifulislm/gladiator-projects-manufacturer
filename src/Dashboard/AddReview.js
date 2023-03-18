@@ -28,7 +28,7 @@ const AddReview = () => {
           
             
         }
-        fetch('https://rocky-thicket-49136.herokuapp.com/review', {
+        fetch(' https://gladiator-servser.onrender.com/review', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',

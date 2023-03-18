@@ -7,7 +7,7 @@ const useProduct = serviceId => {
     
     
     const fethItems = () => {
-        const url = `https://rocky-thicket-49136.herokuapp.com/purchase/${serviceId}`;
+        const url = ` https://gladiator-servser.onrender.com/purchase/${serviceId}`;
         fetch(url)
     
         .then((res) => res.json())

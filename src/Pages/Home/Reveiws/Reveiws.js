@@ -7,7 +7,7 @@ const Reveiws = () => {
     // console.log(service);
     
     useEffect(() => {
-     fetch('https://rocky-thicket-49136.herokuapp.com/reviews')
+     fetch(' https://gladiator-servser.onrender.com/reviews')
      .then(res=> res.json())
      .then(data =>  setReveiw(data)) 
     } ,[])

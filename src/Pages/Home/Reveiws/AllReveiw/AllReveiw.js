@@ -10,7 +10,7 @@ const [isLoading,setLoading] = useState(true)
 
 
 const fethItems = () => {
-    fetch("https://rocky-thicket-49136.herokuapp.com/reviews")
+    fetch(" https://gladiator-servser.onrender.com/reviews")
 
     .then((res) => res.json())
     .then((data) => {
